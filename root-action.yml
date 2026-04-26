@@ -3,7 +3,7 @@ app.Action:
   text: Nasdanika Templates
   location: https://github.com/Nasdanika-Templates
   children:
-    - app.ActionReference: "my.xmi#/"
+    - app.ActionReference: "shiporder.xmi#/"
     - app.Action:
         location: ${base-uri}search.html
         icon: fas fa-search

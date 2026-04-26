@@ -1,6 +1,6 @@
-# Xcore Documentation
+# XML Schema Documentation
 
-This is a template repository for generating documentation from [Xcore](https://wiki.eclipse.org/Xcore) metamodels.
+This is a template repository for generating documentation from XML Schemas.
 Documentation can be generated manually using [Nasdanika CLI](https://docs.nasdanika.org/nsd-cli/index.html) and then published to GitHub pages if desired.
 It can also be generated using GitHub actions calling Nasdanika CLI. 
 
@@ -15,13 +15,13 @@ To generate and commit doc stubs you will have to either clone the repository to
 
 ## Manual generation
 
-Once you install Nasdanika CLI the first step isto generate the web site ([HTML Application](https://html-app.models.nasdanika.org/index.html)) model with [xcore/doc/save](https://docs.nasdanika.org/nsd-cli/nsd/xcore/doc/save/index.html) command pipeline:
+Once you install Nasdanika CLI the first step isto generate the web site ([HTML Application](https://html-app.models.nasdanika.org/index.html)) model with [xsd-to-ecore/doc/save](https://docs.nasdanika.org/nsd-cli/nsd/xsd-to-ecore/doc/save/index.html) command pipeline:
 
 ```
-nsd xcore my.xcore doc --diagram=my.drawio --doc-stubs --doc-dir=doc save my.xmi
+nsd xsd-to-ecore shiporder.xsd doc --diagram=shiporder.drawio --doc-stubs --doc-dir=doc save shiporder.xmi
 ```
 
-Remove `--diagram=my.drawio` if you've already generated a diagram file before and manually adjusted it. 
+Remove `--diagram=shiporder.drawio` if you've already generated a diagram file before and manually adjusted it. 
 You may re-generate a diagram file if there are changes in the source file - added or deleted classifiers.
 
 `--doc-stubs` option works with `--doc-dir`` option and tells the command to generate empty markdown files for model elements.
@@ -39,9 +39,9 @@ You can also mount it to a larger site.
 
 GitHub actions generate a documentation site, a diagram, and a doc stubs zip:
 
-* Documentation: https://nasdanika-templates.github.io/xcore-doc/index.html
-* Generated diagram file: https://nasdanika-templates.github.io/xcore-doc/my.drawio
-* Doc stubs zip: https://nasdanika-templates.github.io/xcore-doc/doc-stubs.zip - unzip and upload using GitHub Web interface if you are not using a local repository clone.
+* Documentation: https://nasdanika-templates.github.io/xsd-doc/index.html
+* Generated diagram file: https://nasdanika-templates.github.io/xsd-doc/shiporder.drawio
+* Doc stubs zip: https://nasdanika-templates.github.io/xsd-doc/doc-stubs.zip - unzip and upload using GitHub Web interface if you are not using a local repository clone.
 
 ## Upgrade to code generation
 
