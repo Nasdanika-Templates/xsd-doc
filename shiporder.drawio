@@ -1,0 +1,77 @@
+<mxfile compressed="false" host="Electron">
+  <diagram id="f5ea3f9f-b0a7-47fe-ad91-c46309e57234" name="Shiporder">
+    <mxGraphModel dx="3318" dy="2755" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <object label="Stringtype" link="references/eClassifiers/Stringtype/index.html" id="89d6a9f3-daf7-41b5-82a7-42436cca1de9">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry height="30" width="120" x="520.0038743342823" y="53" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="04bc0720-a04e-4c1b-b0df-461b6e3a9c34" edge="1" parent="1" source="89d6a9f3-daf7-41b5-82a7-42436cca1de9" target="89d6a9f3-daf7-41b5-82a7-42436cca1de9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="Inttype" link="references/eClassifiers/Inttype/index.html" id="1659ae9d-e46e-4819-9c60-60f70e6b3297">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry height="30" width="120" x="520" y="94.77999999999997" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="b6f50c34-efe7-425d-ad3d-a8083c35dfe2" edge="1" parent="1" source="1659ae9d-e46e-4819-9c60-60f70e6b3297" target="1659ae9d-e46e-4819-9c60-60f70e6b3297">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="Shipordertype" link="references/eClassifiers/Shipordertype/index.html" id="b5734e14-0a79-41e3-8fee-e38f719d12ff">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry height="30" width="120" x="163.06634896319628" y="64.7796366895713" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="DocumentRoot" link="references/eClassifiers/DocumentRoot/index.html" id="8304980a-1df2-46b7-a402-9b1f227b8256">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry height="30" width="120" x="163.07" y="-30.00418800416068" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="shiporder" link="references/eClassifiers/DocumentRoot/references/eStructuralFeatures/shiporder/index.html" id="50d63167-caf1-4bee-8015-5b4bd5211b4d">
+          <mxCell edge="1" parent="1" source="8304980a-1df2-46b7-a402-9b1f227b8256" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" target="b5734e14-0a79-41e3-8fee-e38f719d12ff">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Orderidtype" link="references/eClassifiers/Orderidtype/index.html" id="95b11033-0509-4456-bba1-f24d12194353">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry height="30" width="120" x="520" y="-30" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="03992b69-aec5-41e5-8f63-16c6c67b909e" edge="1" parent="1" source="95b11033-0509-4456-bba1-f24d12194353" target="95b11033-0509-4456-bba1-f24d12194353">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="Shiptotype" link="references/eClassifiers/Shiptotype/index.html" id="9916476a-afd9-464c-8e0a-6ad3bd502ad3">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry height="30" width="120" x="380" y="64.78" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="shipto" link="references/eClassifiers/Shipordertype/references/eStructuralFeatures/shipto/index.html" id="e55765bf-cf75-472e-bdd0-57b5e3929946">
+          <mxCell edge="1" parent="1" source="b5734e14-0a79-41e3-8fee-e38f719d12ff" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" target="9916476a-afd9-464c-8e0a-6ad3bd502ad3">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Itemtype" link="references/eClassifiers/Itemtype/index.html" id="cad38868-8a01-4bee-ae09-bc0b18a1f247">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry height="30" width="120" x="163.0678505987668" y="160" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="item" link="references/eClassifiers/Shipordertype/references/eStructuralFeatures/item/index.html" id="c0b76b9f-9624-4281-b8ea-fba09fdf78da">
+          <mxCell edge="1" parent="1" source="b5734e14-0a79-41e3-8fee-e38f719d12ff" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1;startArrow=diamondThin;startFill=1" target="cad38868-8a01-4bee-ae09-bc0b18a1f247">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Dectype" link="references/eClassifiers/Dectype/index.html" id="0923d6cb-a269-4ec4-ba26-65735771d7d8">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry height="30" width="120" x="520" y="12" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="ff88018e-7349-4eed-a94e-9fcb38a9cb67" edge="1" parent="1" source="0923d6cb-a269-4ec4-ba26-65735771d7d8" target="0923d6cb-a269-4ec4-ba26-65735771d7d8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
